@@ -87,12 +87,15 @@ WSGI_APPLICATION = 'kabasisWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kabasisweb',
-        'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'mssql',
+        'NAME': 'kabasisweb3',
+        'USER': 'sa',
+        'PASSWORD': '12345678',
+        'HOST': 'DESKTOP-F2LIVPI',
+        'PORT': '',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        },
 
 
 
