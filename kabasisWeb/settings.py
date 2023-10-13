@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-jl1k_*7sfuc*frpb-&5ievloyoo@@#$q$hhns1ss9_$2iu6m@f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -143,11 +143,11 @@ USE_TZ = True
 
 # Configuración de archivos estáticos
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'KabasisWebApp', 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 # Configuración de archivos de medios
 MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'KabasisWebApp', 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 # Default primary key field type
