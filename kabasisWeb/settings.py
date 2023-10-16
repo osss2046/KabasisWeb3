@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-jl1k_*7sfuc*frpb-&5ievloyoo@@#$q$hhns1ss9_$2iu6m@f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','192.168.103.104','localhost']
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -89,8 +89,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'kabasisweb3',
-        'USER': 'sa',
-        'PASSWORD': '12345678',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'DESKTOP-F2LIVPI',
         'PORT': '',
         'OPTIONS': {
